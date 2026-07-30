@@ -32,6 +32,14 @@ cd <repository_name>
 git lfs pull
 ```
 
+Run Infrence(AFTER EVERYTHING INSTALLED):
+```bash
+python examples/inference.py -i assets/base/segmented.json -o outputs/segmented
+python examples/inference.py -i assets/base/input.json -o outputs/input
+python examples/inference.py -i assets/base/bus_terminal.json -o outputs/bus
+```
+do bus terminal if the first 2 fail. Its a default example.
+
 Install one of the following environments:
 
 <details id="virtual-environment"><summary><b>Virtual Environment</b></summary>
@@ -104,6 +112,8 @@ If you get `docker: Error response from daemon: unknown or invalid runtime name:
 sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 ```
+
+
 
 </details>
 
