@@ -36,6 +36,7 @@ Run Infrence(AFTER EVERYTHING INSTALLED):
 ```bash
 python examples/inference.py -i assets/base/segmented.json -o outputs/segmented
 python examples/inference.py -i assets/base/input.json -o outputs/input
+python examples/inference.py -i assets/base/input2.json -o outputs/input
 python examples/inference.py -i assets/base/bus_terminal.json -o outputs/bus
 ```
 do bus terminal if the first 2 fail. Its a default example.
