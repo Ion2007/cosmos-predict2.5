@@ -27,10 +27,19 @@ git lfs install
 Clone the repository:
 
 ```bash
-git clone git@github.com:nvidia-cosmos/<repository_name>.git
+git clone https://github.com/Ion2007/cosmos-predict2.5/
 cd <repository_name>
 git lfs pull
 ```
+
+Run Infrence(AFTER EVERYTHING INSTALLED):
+```bash
+python examples/inference.py -i assets/base/segmented.json -o outputs/segmented
+python examples/inference.py -i assets/base/input.json -o outputs/input
+python examples/inference.py -i assets/base/input2.json -o outputs/input
+python examples/inference.py -i assets/base/bus_terminal.json -o outputs/bus
+```
+do bus terminal if the first 2 fail. Its a default example.
 
 Install one of the following environments:
 
@@ -104,6 +113,8 @@ If you get `docker: Error response from daemon: unknown or invalid runtime name:
 sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 ```
+
+
 
 </details>
 
