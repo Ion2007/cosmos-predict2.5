@@ -27,7 +27,7 @@ git lfs install
 Clone the repository:
 
 ```bash
-git clone git@github.com:nvidia-cosmos/<repository_name>.git
+git clone https://github.com/Ion2007/cosmos-predict2.5/
 cd <repository_name>
 git lfs pull
 ```
